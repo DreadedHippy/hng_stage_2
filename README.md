@@ -34,7 +34,7 @@ To use this server, follow the instructions below:
 2. In your newly created `.env` file, fill in the necessary information.
 	- POSTGRES_USER: The username of your postgres user
 	- POSTGRES_PASS: The password for your postgres user
-	- POSTGRES_HOST: The host url of your postgres database
+	- POSTGRES_HOST: The postgres database host
 	- POSTGRES_DB: The name of your postgres database
 	- POSTGRES_PORT: The port your postgres database is running on
 
