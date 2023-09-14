@@ -43,12 +43,12 @@ To use this server, follow the instructions below:
 4. With all dependencies installed, run `npm start` to start the server.
 
 ### UML Diagrams
-[UML Diagram as PNG](https://github.com/DreadedHippy/hng_stage_2/blob/master/UML.png)
-[UML Diagram as .dio file](https://github.com/DreadedHippy/hng_stage_2/blob/master/UML.dio)
+- [UML Diagram as PNG](https://github.com/DreadedHippy/hng_stage_2/blob/master/UML.png)
+- [UML Diagram as .dio file](https://github.com/DreadedHippy/hng_stage_2/blob/master/UML.dio)
 
 ### Sample API Request
-Use [https://aizonhngtasks.azurewebsites.net/api](https://aizonhngtasks.azurewebsites.net/api) to make a sample API request on the HNG submitted task
-Use [http://localhost:8080](http://localhost:8080) to make API requests on your locally hosted server.
+- Use [https://aizonhngtasks.azurewebsites.net/api](https://aizonhngtasks.azurewebsites.net/api) to make a sample API request on the HNG submitted task
+- Use [http://localhost:8080](http://localhost:8080) to make API requests on your locally hosted server.
 
 ### Notes
 - The server runs on port 8080 by default but you can change that by adding a `PORT` field in the env file and specifying your preferred point number
