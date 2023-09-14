@@ -21,11 +21,11 @@ Response
 - data: `object`, `array` -> not always present
 
 ### API Routes
-get all persons: GET (`/api`)
-get specific person: GET (`/api/{id}`)
-create person: POST (`/api`)
-update person: PATCH (`/api/{id}`)
-delete person: DELETE (`/api/{id}`)
+- get all persons: GET (`/api`)
+- get specific person: GET (`/api/{id}`)
+- create person: POST (`/api`)
+- update person: PATCH (`/api/{id}`)
+- delete person: DELETE (`/api/{id}`)
 
 ### How to use
 To use this server, follow the instructions below:
