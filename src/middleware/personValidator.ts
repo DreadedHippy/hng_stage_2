@@ -6,7 +6,6 @@ export async function personValidator(req: Request, res: Response, next: NextFun
 	let postValidation = personSchema.validate(req.body);
 
 	if (postValidation.error) {
-		console.log(postValidation.error.details);
 		new ErrorHandler().badRequest(res, {
 			status: false,
 			message: `Could not create post, ${postValidation.error.message ? postValidation.error.message : postValidation.error.details[0].message}`

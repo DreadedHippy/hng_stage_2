@@ -19,17 +19,20 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: true,
+    message: "This is the home route :D"
+  })
+})
 
 app.use("/api", personRoutes);
-// app.get("/api", (req, res) => {
-//   res.status(200).json({
-//     message: "API route"
-//   })
-// });
-// app.get("*", (req: Request, res: Response) => {
-// 	res.status(200).json({
-// 		message: "Server works"
-// 	})
-// });
+
+app.get("*", (req, res) => {
+  res.status(404).json({
+    status: false,
+    message: "Not quite sure the route you were looking for..."
+  })
+})
 
 export default app;

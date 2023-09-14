@@ -24,10 +24,11 @@ export async function getSpecificPerson(req: Request, res: Response) {
   const id = parseInt(req.params.id);
   getSpecificPersonFromDB(id)
     .then((result) => {
-      res.status(200).json({
+      let data = {
         status: true,
         data: result.rows[0] || {}
-      })
+      };
+      new SuccessHandler().Ok(res, data);
     })
     .catch((error) => {
       errorHandler.genericInternalServerError(res)
@@ -60,7 +61,7 @@ export async function editPerson(req: Request, res: Response) {
     .then((results) => {
       let data = {
         status: true,
-        message: results.rowCount == 0 ? `User with given ID not found, no user updated`: `Modified user with ID: ${id}`
+        message: results.rowCount == 0 ? `User with given ID not found, no user updated`: `Modified user with ID: ${id}`,
       };
       new SuccessHandler().Ok(res, data)
     })

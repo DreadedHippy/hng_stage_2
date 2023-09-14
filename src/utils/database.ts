@@ -9,7 +9,7 @@ const pool = new Pool({
 	password: process.env.POSTGRES_PASS,
 	host: process.env.POSTGRES_HOST,
 	database: process.env.POSTGRES_DB,
-	port: 5432
+	port: Number(process.env.POSTGRES_PORT)
 })
 
 export function getAllPersonsFromDB(): Promise<QueryResult>{
