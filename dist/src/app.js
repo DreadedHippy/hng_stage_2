@@ -31,14 +31,4 @@ app.get("*", function (req, res) {
         message: "Not quite sure the route you were looking for..."
     });
 });
-// app.get("/api", (req, res) => {
-//   res.status(200).json({
-//     message: "API route"
-//   })
-// });
-// app.get("*", (req: Request, res: Response) => {
-// 	res.status(200).json({
-// 		message: "Server works"
-// 	})
-// });
 exports.default = app;
