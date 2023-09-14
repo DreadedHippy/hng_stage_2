@@ -16,6 +16,6 @@ export class SuccessHandler {
 
 	// A resource has been deleted from the database
 	resourceDeleted(res: Response, data: httpResponse) {
-		res.status(204).json(data);
+		res.status(200).json(data);
 	}
 }
