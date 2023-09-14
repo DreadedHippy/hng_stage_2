@@ -51,6 +51,6 @@ To use this server, follow the instructions below:
 - Use [http://localhost:8080](http://localhost:8080) to make API requests on your locally hosted server.
 
 ### Notes
-- The server runs on port 8080 by default but you can change that by adding a `PORT` field in the env file and specifying your preferred point number
+- The server runs on port 8080 by default but you can change that by adding a `PORT` field in the env file and specifying your preferred port number
 
 

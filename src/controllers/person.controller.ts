@@ -42,7 +42,8 @@ export async function createPerson(req: Request, res: Response) {
     .then((results) => {
       let data = {
         status: true,
-        message: `Added user with ID: ${results.rows[0].id}`
+        message: `Added user with ID: ${results.rows[0].id}`,
+        data: results.rows[0]
       }
       new SuccessHandler().resourceCreated(res, data)
     })
